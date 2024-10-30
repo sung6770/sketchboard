@@ -1,0 +1,123 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-top: 30px;
+}
+
+canvas {
+    width:800px;
+    height:800px;
+    background-color: white;
+    border:1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #444
+}
+
+/* 색상 팔레트 스타일 */
+#color {
+    width: 30px;
+    height: 30px;
+}
+
+.color-pallette {
+    display: flex;
+    flex-direction: row;
+}
+
+.color-options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.color-option {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.color-option:hover {
+    box-shadow: 2px 2px 1px 1px #555555
+}
+
+/* 그 외 기타 input 스타일 */
+.controls {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#line-width {
+    accent-color: #444;
+}
+
+/* 버튼들 스타일 */
+.control-btn, label {
+    width: 80px;
+    margin-left: 15px;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+.control-btn:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+}
+
+.control-btn:active {
+	position:relative;
+	top:1px;
+}
+
+#reset-btn {
+	box-shadow:inset 0px 1px 0px 0px #f7c3c0;
+	background:linear-gradient(to bottom, #fc8d83 5%, #e4685d 100%);
+	background-color:#fc8d83;
+	border:1px solid #d83526;
+	color:#ffffff;
+	text-shadow:0px 1px 0px #b23e35;
+}
+
+#reset-btn:hover {
+    background:linear-gradient(to bottom, #e4685d 5%, #fc8d83 100%);
+	background-color:#e4685d;
+}
+
+#save-btn {
+	box-shadow:inset 0px 1px 0px 0px #dcecfb;
+	background:linear-gradient(to bottom, #bddbfa 5%, #80b5ea 100%);
+	background-color:#bddbfa;
+	border:1px solid #84bbf3;
+	color:#ffffff;
+	text-shadow:0px 1px 0px #528ecc;
+}
+
+#save-btn:hover {
+	background:linear-gradient(to bottom, #80b5ea 5%, #bddbfa 100%);
+	background-color:#80b5ea;
+}
+
+#image-btn {
+    display: none;
+}
